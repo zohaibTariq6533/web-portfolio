@@ -22,7 +22,7 @@ export default function Navbar() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link pagesName" to="/services">
-                  Servicess
+                  Services
                 </Link>
               </li>
               <li className="nav-item">
