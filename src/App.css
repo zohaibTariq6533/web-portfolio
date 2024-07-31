@@ -6,6 +6,9 @@ body{
     margin: 0px;
     padding: 0px;
 }
+.Navbar{
+    padding: 0px;
+}
 .nameLogo{
     font-size: 2rem;
     text-decoration: none;

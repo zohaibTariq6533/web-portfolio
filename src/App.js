@@ -8,6 +8,7 @@ import Contact from './componants/Contact';
 import About from './componants/About';
 import ScrollToTop from './componants/ScrollToTop';
 function App() {
+  const apikey=process.env.REACT_APP_API_KEY;
   return (
     <>
     <Router>
@@ -17,7 +18,7 @@ function App() {
         <Route path='/' element={<Home   />}></Route>
         <Route path='/services' element={<Services/>}></Route>
         <Route path='/about' element={<About/>}></Route>
-        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/contact' element={<Contact apii={apikey}/>}></Route>
         
       </Routes>
       <Footer/>
