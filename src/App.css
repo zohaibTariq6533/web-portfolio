@@ -1,0 +1,746 @@
+body{
+    background-color: black;
+}
+*{
+    cursor: default;
+    margin: 0px;
+    padding: 0px;
+}
+.nameLogo{
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+#navUl {
+    gap: 50px;
+}
+.pagesName{
+    font-size: 1rem;
+    font-family: poppins;
+    transition: all 0.2s;
+    position: relative;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.pagesName:hover{
+
+    color: white;
+}
+.pagesName:after{
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 0, 55);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.4s;
+}
+.pagesName:hover:after{
+    width: 100%;
+}
+
+
+.Main{
+    
+    height: 100vh;
+    max-width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#homeMain{
+    background: url('./componants/Image/background.avif');
+    background-size: cover;
+}
+.pText{
+    display: inline-block;
+}
+ .pText label{
+    color: white;
+    font-family: 'Abel';
+    font-size: 3rem;
+    letter-spacing: 1px;
+    border-right: 3px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+            typing 2s steps(22),
+            cursor .4s step-end infinite alternate;
+} 
+
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0;}
+}
+.Main p{
+    color: white;
+    opacity: 0.7;
+    width: 70%;
+}
+
+.services{
+    height: 90vh;
+    width: 100%;
+    background:rgba(0, 0, 0, 0.77) url('./componants/Image/projectsBg.png');
+    background-blend-mode: darken;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 12%;
+}
+.services h2{
+    color: white;
+}
+.serCards{
+    color: white;
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#card1{
+    background: rgba(0, 0, 0, 0.85) url('./componants/Image/webDev.avif');
+    background-size: cover;
+}
+#card2{
+    background: rgba(0, 0, 0, 0.85) url('./componants/Image/wpDev.jpeg');
+    background-size: cover;
+}
+#card3{
+    background: rgba(0, 0, 0, 0.85) url('./componants/Image/shopifyDev.png');
+    background-size: cover;
+}
+#card4{
+    background: rgba(0, 0, 0, 0.85) url('./componants/Image/uiDev.jpeg');
+    background-size: cover;
+}
+.serCards .cards{
+    height: 11em;
+    width: 12rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 10px #ffffff;
+    font-family: Roboto;
+    transition: all 0.15s;
+
+}
+.serCards .cards:hover{
+    box-shadow: 0px 0px 12px rgb(255, 0, 55);
+}
+.servicesLink{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.7px;
+    font-family: poppins;
+    position: relative;
+    padding: 0 10px;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.servicesLink:after{
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 0, 55);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.3s;
+}
+.servicesLink:hover:after{
+    width: 100%;
+}
+.servicesLink:hover{
+    color: red;
+}
+.projects{
+        background: rgba(0, 0, 0, 0.5)  url('./componants/Image/projectsBg.png');
+        height:45rem;
+        max-width:auto;
+        background-size: cover;
+        background-blend-mode:darken ;
+        
+}
+.projects h2{
+    font-family: 'Poppins';
+    color: white;
+    text-align: center;
+}
+
+.mainCarousal{
+    justify-content: center;
+}
+#carousalCard{
+    height: 70vh;
+    width: 70%;
+    border-radius: 5px;
+}
+#contactTag{
+    background-color: black;
+    text-align: center;
+    padding-top: 60px;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(209, 25, 25);
+}
+.invCard{
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    background-color: #000000;
+}
+#contactCard{
+    width: 50%;
+    height: 50vh;
+    background: url('./componants/Image/contactBg.avif');
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-size: cover;
+    box-shadow: 0px 0px 5px red; 
+    transition: all 0.15s; 
+}
+#contactCard:hover{
+    box-shadow: 0px 0px 15px red;  
+}
+.invCard h3{
+    width: 40%;
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-family: Poppins;
+}
+.invCard h5{
+    font-style: italic;
+    color: white;
+}
+.Footer{
+    height: 60vh;
+    width: 100%;
+    padding-top: 60px;
+}
+.footerTag{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.footerNavLinks{
+    color: white;
+    opacity: 0.4;
+    font-family: Roboto;
+    font-size: 0.85rem;
+    transition: all 0.15s;
+    cursor: pointer;
+}
+.footerNavLinks:hover{
+    opacity: 1;
+    color: red;
+}
+
+
+.Icon {
+    font-size: 2rem;
+    color: white;
+    margin-top: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.email{
+    text-decoration: none;
+}
+/* Contact CSs */
+.contactMain{
+    height: 80vh;
+    width: 100%;
+    background:url('./componants/Image/contactMain.avif');
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.contactMain h2{
+    font-family: poppins;
+    color: white;
+    margin: 0px;
+}
+.contactMain p{
+    margin: 0px;
+    color: white;
+    font-family: poppins;
+    opacity: 0.4;
+}
+.contactFormSection{
+    height: 100vh;
+    background-color: rgb(36, 35, 35);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactFormSection h2{
+    font-family: poppins;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    padding-top:2.5rem ;
+}
+.formDiv{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.socialContact{
+    width: 30%;
+    height: 60%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contactIcon{
+    margin: 10px 10px 0 10px;
+    font-size: 1.6rem;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+}
+.phoneSec{
+    display: flex;
+}
+.phoneSec i{
+    padding: 5px 3px 0 0 ;
+}
+.phone{
+    color: white;
+    transition: all 0.15s;
+}
+.phone:hover{
+    color: red;
+}
+.mainForm{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.mainForm form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+.mainForm form input,textarea{
+    background-color: transparent;
+    border: 2.5px solid rgb(92, 82, 82);
+    border-radius:1rem;
+    color: white;
+    padding-left: 15px;
+}
+.mainForm form input{
+    height: 40px;
+    cursor: text;
+}
+.contactForm textarea{
+    width: 70%;
+    height: auto;
+}
+.mainForm form input:hover,textarea:hover{
+    box-shadow: 0px 0px 15px red;
+}
+.errorMsg{
+    color: red;
+}
+
+/* services */
+#servicesMain{
+    background-image: url(./componants/Image/ServicesBg.avif);
+    background-size: cover;
+}
+.serviceSection{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviceSectionHeading{
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    padding-top: 2rem ;
+    
+}
+.mainServiceContainer{
+    height: 90%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.serviceText{
+    height: 50%;
+    width: 45%;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.serviceText p{
+    margin: 0px;
+    opacity: 0.5;
+    font-family: roboto;
+}
+.serviceText h3{
+    font-style: italic;
+    margin: 0px;
+}
+.mainServiceSection{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.serviceRow{
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.serviceCard{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px ;
+    background-blend-mode: darken;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    text-shadow: 0px 0px 10px white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.serviceCard:hover{
+    box-shadow: 0px 0px 20px red;
+} 
+/* #card2{
+    font-size: 0.85rem;
+} */
+#card5{
+    background: rgba(0, 0, 0, 0.65) url('./componants/Image/logobg.jpeg');
+    background-size: cover;
+}
+#card6{
+    background: rgba(0, 0, 0, 0.65) url('./componants/Image/seoBg.jpeg');
+    background-size: cover;
+}
+.languages{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.languages h3{
+    color: white;
+    font-family: poppins;
+    text-align: center;
+    padding-top: 25px;
+}
+.languageLogosDiv{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.logoSec{
+    width: 10rem;
+    height: 3rem;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: roboto;
+}
+#lanLogos{
+    color: white;
+    font-size: 3rem;
+}
+/* About us */
+.aboutMain{
+    height: 80vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.65) url('./componants/Image/aboutBg.avif');
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutIntoText{
+    display: inline;
+}
+.aboutIntoText h2{
+    color: white;
+    font-family: poppins;
+    border-right: 2px solid white;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+            typing 2s steps(10),
+            cursor .4s step-end infinite alternate;
+} 
+
+@keyframes cursor{
+    50% {border-color: transparent;}
+}
+@keyframes typing{
+    from {width: 0;}
+}
+.mainContentAbout{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    justify-content: center;
+}
+.aboutText{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.aboutText h2{
+    color: white;
+}
+.expertise{
+    display: flex;
+    align-items: center;
+}
+.expertise h4{
+    color: white;
+    font-family: poppins;
+    font-weight: bold;
+}
+.expertise p{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    font-family: abel;
+}
+.imgSecAbout{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutText p{
+    color: white;
+    font-family: roboto;
+    cursor:default;
+    text-align: justify;
+}
+.imgSection{
+    height: 18rem;
+    width: 18rem;
+    background:url(./componants/myImg.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px red;
+}
+.whyChooseMe{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(29, 28, 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.whyChooseMeCard{
+    height: 60%;
+    width: 60%;
+    background-color: rgb(29, 28, 28);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 15px red;
+}
+.whyChooseMeCard h3{
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    font-family: roboto;
+}
+.whyChooseMeCard p{
+    color: white;
+    font-family: poppins;
+    text-align: justify;
+    padding: 15px;
+}
+@media screen and (max-width:990px) {
+    #navUl {
+        gap: 14px;
+        width: 100%;
+        background-color: black;
+    }
+    .pText label{
+        font-size: 1.8rem;
+    }
+    .pagesName:hover:after{
+        width: 25%;
+    }
+    
+    .services{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .serCards{
+        gap: 20px;
+    }
+    .projects{
+        height: 28rem;
+    }
+    .projects h2{
+        padding-top: 40px;
+    }
+    #carousalCard{
+        height: auto;
+        width: 100%;
+    }
+    .invCard{
+        height: 80vh;
+        margin-bottom: 30px;
+    }
+    .invCard h3{
+       width: 80%;
+       order: -1;
+    }
+    .invCard .card{
+        width: 100%;
+    }
+    #contactCard{
+        width: 95%;
+        background-size:cover ;
+        height: 200px;
+        
+    }
+    .contactMain{
+        height: 45vh;
+    }
+    .formDiv{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    #contactForm{
+        gap: 10px;
+    }
+    .mainForm{
+        order: -1;
+        width: 100%;
+    }
+    .contactFormSection{
+        height: auto;
+    }
+    .socialContact{
+        width: 60%;
+        height: 30vh;
+    }
+    .mainServiceContainer{
+        flex-direction: column;
+        width: 95%;
+    }
+    .mainServiceSection{
+        width: 100%;
+    }
+    .serviceCard{
+        width: 45%;
+        height: 90%;
+        border-radius: 12px;
+    }
+    .serviceText{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 40%;
+    }
+    .languages{
+        height:80vh;
+        justify-content: space-evenly;
+        
+    }
+    #lanLogos{
+        margin-bottom: 5px;
+    }
+.languageLogosDiv{
+    width: 100%;
+    height: 50vh;
+    row-gap: 20px;
+    overflow-y: auto;
+}
+.mainContentAbout{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutText {
+    width: 80%;
+}
+.imgSecAbout{
+    width: 80%;
+    order: -1;
+}
+.aboutMain{
+    height: 55vh;
+}
+.whyChooseMe{
+    height: 50vh;
+}
+.whyChooseMeCard{
+    width: 90%;
+    overflow-y: scroll;
+    
+}
+}
