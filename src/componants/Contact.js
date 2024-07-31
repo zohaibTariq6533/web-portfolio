@@ -34,7 +34,6 @@ export default function Contact(props) {
       setError("Detail about project is required");
       e.preventDefault();
     } else {
-      setError("");
     }
   };
   return (
@@ -75,7 +74,8 @@ export default function Contact(props) {
           </div>
 
           <div className="mainForm">
-            <form id="contactForm"onSubmit={handleSubmit}>
+            <form id="contactForm"onSubmit={handleSubmit} action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="3368d7ac-9861-4a1f-90c1-3f43018992a4"/>
               <input type="text" placeholder="Full Name" id="name" name="name" autoComplete="off" onChange={handleChange} value={formData.name}/>
               <input type="text" placeholder="Email" id="email" name='email' autoComplete="off" onChange={handleChange} value={formData.email}/>
               <input type="number" placeholder="Phone Number" id="pNumber" name='number' autoComplete="off" onChange={handleChange} value={formData.number} />
