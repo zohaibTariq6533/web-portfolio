@@ -583,7 +583,7 @@ body{
 .imgSection{
     height: 18rem;
     width: 18rem;
-    background:url(./componants/myImg.jpg);
+    background:url(./componants/myImage.JPG);
     background-size: cover;
     border-radius: 50%;
     box-shadow: 0px 0px 12px red;
